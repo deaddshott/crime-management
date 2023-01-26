@@ -1,0 +1,74 @@
+body {
+    background: #67B26F;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #647bff, #090a1a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #647bff, #090a1a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Customized Scroll bar */
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: #090A23 ;
+}
+
+.logo {
+    /* font-family: 'Seymour One', sans-serif; */
+    /* font-family: 'Yeon Sung', cursive; */
+    color: white;
+    text-decoration: none;
+    outline: none;
+    padding-left: 32px;
+    padding-right: 350px;
+    font-size: 59px;
+    line-height: 80px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.student-profile .card {
+    border-radius: 10px;
+}
+
+.student-profile .card .card-header .profile_img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 10px solid #ccc;
+    border-radius: 50%;
+}
+
+.student-profile .card h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.student-profile .card p {
+    font-size: 16px;
+    color: #000;
+}
+
+.student-profile .table th,
+.student-profile .table td {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #000;
+}
+
+.logout {
+    font-size: 1.5rem;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 1.5rem;
+}
