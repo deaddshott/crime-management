@@ -4,7 +4,7 @@
    <head>
       <meta charset="utf-8">
       <title>Crime Complain | TCB</title>
-      <link rel="stylesheet" href="complain.css">
+      <link rel="stylesheet" href="complain.css?v=<?php echo time(); ?>">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="shortcut icon" href="Images/logo2.png" type="image/x-icon">
    </head>

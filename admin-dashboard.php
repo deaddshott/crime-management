@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <title>Admin Dashboard | TCB</title>
-  <link rel="stylesheet" href="admin-dashboard.css" />
+  
   <!-- Font Awesome Cdn Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="admin-dashboard.css?v=<?php echo time(); ?>" />
   <link rel="shortcut icon" href="Images/logo2.png" type="image/x-icon">
 </head>
 <body>
@@ -198,19 +199,19 @@
                   <td><?= $evidence ?></td>
                   <td><?= $description ?></td>
                   <td><?= $date ?></td>
-                  <td><button><a class="button" href="#popup1">View</a> </button></td>
+                  <td><button><a class="button" href="#popup1-<?=$id?>">View</a> </button></td>
                 </tr>
-                <div id="popup1" class="overlay">
+                <div id="popup1-<?= $id; ?>" class="overlay">
                 <div class="popup">
-                    <h2>evidence: <?php echo $evidence;?></h2>
+                    <h2>Crime Details</h2>
                     <a class="close" href="#">&times;</a>
                     <div class="content">
-                       Details: <?php echo $description;?>
+                       <?php echo $description;?>
                     </div>
                 </div>
               
             
-                <?php $count++; ?>
+                
               <?php endforeach; ?>
             <?php endif; ?>
             <?php endif; ?>
@@ -266,6 +267,7 @@
       </section>
     </section>
   </div>
+
 
   <!-- Footer -->
   <footer class="footer">

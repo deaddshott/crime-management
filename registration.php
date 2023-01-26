@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Register Yourself | TCB </title>
-  <link rel="stylesheet" href="registration.css">
+  <link rel="stylesheet" href="registration.css?v=<?php echo time(); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="Images/logo2.png" type="image/x-icon">
 </head>
